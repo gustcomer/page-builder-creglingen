@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: pagebuilder_wurzburg
+    ports:
+      - "3306:3306"
+    volumes:
+      - page-builder-wurzburg:/var/lib/mysql
+
+volumes:
+  page-builder-wurzburg:
