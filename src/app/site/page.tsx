@@ -9,7 +9,15 @@ export default function Home() {
         <div className="bg-gradient-to-r from-primary to-secondary-foreground text-transparent bg-clip-text relative">
           <h1 className="text-9xl font-bold text-center md:text-[300px]">Startup</h1>
         </div>
-        <div></div>
+        <div className="flex justify-center items-center relative md:mt-[-70px]">
+          <Image 
+            src={'/assets/preview.png'}
+            alt="banner image"
+            height={1200}
+            width={1200}
+            className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
+          />
+        </div>
       </section>
     </>
   );
